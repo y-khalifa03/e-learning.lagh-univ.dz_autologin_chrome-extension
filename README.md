@@ -1,4 +1,4 @@
-##e-learning.lagh-univ.dz_autologin_chrome-extension
+### e-learning.lagh-univ.dz_autologin_chrome-extension
 
 
 After adding the extension to your chrome browser , click the icon and enter your credentials .
