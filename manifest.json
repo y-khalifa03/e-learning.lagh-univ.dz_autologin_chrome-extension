@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Lagh-Univ Auto Login",
+  "version": "1.0",
+  "description": "Automatically logs into the University of Amar Telidji - Laghouat e-learning platform.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://e-learning.lagh-univ.dz/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Lagh-Univ Auto Login"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://e-learning.lagh-univ.dz/login/index.php*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

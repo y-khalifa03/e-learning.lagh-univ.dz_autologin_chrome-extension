@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Lagh-Univ Auto Login</title>
+  <style>
+    body {
+      width: 280px;
+      padding: 15px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7f6;
+      color: #333;
+      margin: 0;
+    }
+    h3 {
+      margin-top: 0;
+      color: #0056b3;
+      text-align: center;
+      font-size: 18px;
+      border-bottom: 2px solid #0056b3;
+      padding-bottom: 8px;
+    }
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: 600;
+      font-size: 13px;
+      color: #555;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    input:focus {
+      outline: none;
+      border-color: #0056b3;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #0056b3;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background-color: #004494;
+    }
+    #status {
+      margin-top: 12px;
+      text-align: center;
+      color: #28a745;
+      font-weight: bold;
+      font-size: 13px;
+      height: 18px;
+    }
+    .footer {
+      margin-top: 15px;
+      font-size: 11px;
+      color: #888;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h3>🎓 Auto Login Settings</h3>
+
+  <label for="username">Username / Email:</label>
+  <input type="text" id="username" placeholder="e.g. 232339006111">
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" placeholder="Enter your password">
+
+  <button id="saveBtn">Save Credentials</button>
+  <div id="status"></div>
+
+  <div class="footer">
+    University of Amar Telidji - Laghouat
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
